@@ -1,0 +1,192 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+body {
+
+    background-color: rgb(255, 216, 145);    
+
+}
+
+/*Containers*/
+    
+.header-container{
+    
+    display: block;
+    block-size: 108.5px;
+    padding-block: 0.5px;
+    background: linear-gradient(darkred, red, orange);
+    background-repeat: no-repeat;
+    padding-bottom: 0px;
+    
+}
+
+.login-container {
+
+    display: block;
+    position: absolute;
+    top: 37.25%;
+    left: 38%;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(360deg, darkred, red, orangered, orange);
+
+}
+
+/*Barra Superior*/
+
+figure{
+
+    width: fit-content;
+    
+}
+    
+.title-logo, .login, .user-container{
+    
+    width: fit-content;
+    
+}
+    
+.logo, .title, .subtitle{
+    
+    display: block;
+    position: relative;
+    width: fit-content;
+    
+}
+    
+    
+.title{
+    
+    margin-left: 135px;
+    bottom: 115px;
+    color: rgb(248, 101, 3);
+    font-size: 35px;
+    text-shadow: 1.25px 1.25px yellow;
+    
+}
+    
+.subtitle{
+    
+    bottom: 110px;
+    margin-left: 155px;
+    font-size: 16.5px;
+    color: orangered;
+    text-shadow: 1.75px 1.75px white;
+    
+}
+
+/*Tela de Login*/
+
+.login-titulo {
+
+    margin-top: 3.5px;
+    margin-bottom: 2px;
+    text-align: center;
+    color: slategray;
+    font-size: 20px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: red;
+
+}
+
+.login-icon {
+
+    position: absolute;
+    right: 170px;
+    top: 40px;
+
+}
+
+.usuario-label, .senha-label {
+
+    position: relative;
+    font-size: 19.5px;
+    color: orangered;
+    -webkit-text-stroke: 0.75px;
+    -webkit-text-stroke-color: white;
+    font-weight: bold;
+    
+
+}
+
+input[type = text], input[type = password] {
+
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 160px;
+    height: 22.5px;
+    font-size: 19.5;
+    background-color: rgb(255, 216, 145);
+    color: darkorange;
+    text-shadow: 0.75px 0.75px red;
+
+}
+
+.usuario-label {
+
+    top: 80px;
+    left: 12.5px;
+
+}
+
+input[type = text] {
+
+
+    right: 90px;
+    top: 108px;
+    
+
+}
+
+
+.senha-label {
+
+    top: 130px;
+    right: 45px;
+
+}
+
+input[type = password] {
+
+    right: 90px;
+    top: 160px;
+
+}
+
+input[type = submit] {
+
+    position: absolute;
+    top: 220px;
+    width: 87.5px;
+    height: 35px;
+    background: linear-gradient(90deg, red, orange);
+    color: white;
+    text-shadow: 0.75px 0.75px black;
+
+}
+
+.novo-usuario {
+
+    position: relative;
+    text-align: center;
+    left: 7.5px;
+    top: 230px;
+    font-size: 16.5px;
+    color: lightgray;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: orange;
+
+}
+    

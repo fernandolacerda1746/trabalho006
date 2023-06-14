@@ -1,0 +1,224 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+body {
+
+    background-color: rgb(255, 216, 145);    
+
+}
+
+/*Containers*/
+
+.header-container{
+    
+    display: block;
+    block-size: 108.5px;
+    padding-block: 0.5px;
+    background: linear-gradient(darkred, red, orange);
+    background-repeat: no-repeat;
+    padding-bottom: 0px;
+    
+}
+
+.cadastro-produto-container {
+
+    position: absolute;
+    width: 700px;
+    height: 530px;
+    left: 25%;
+    background: linear-gradient(360deg, darkred, red, orangered, orange);
+
+}
+
+/*Barra Superior*/
+
+figure{
+
+    width: fit-content;
+    
+}
+    
+.title-logo, .login, .user-container{
+    
+    width: fit-content;
+    
+}
+    
+.logo, .title, .subtitle{
+    
+    display: block;
+    position: relative;
+    width: fit-content;
+    
+}
+    
+    
+.title{
+    
+    margin-left: 135px;
+    bottom: 115px;
+    color: rgb(248, 101, 3);
+    font-size: 35px;
+    text-shadow: 1.25px 1.25px yellow;
+    
+}
+    
+.subtitle{
+    
+    bottom: 110px;
+    margin-left: 155px;
+    font-size: 16.5px;
+    color: orangered;
+    text-shadow: 1.75px 1.75px white;
+    
+}
+ /*Ficha de Cadastro*/
+
+.titulo, .subtitulo {
+
+    text-align: center;
+    margin-top: 5px;
+    color: slategray;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: red;
+
+}
+
+.titulo {
+
+    font-size: 35px;
+
+}
+
+.subtitulo {
+
+    font-size: 20px;
+
+}
+
+.ficha-cadastro {
+
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.produto-nome, .produto-preco, .produto-descricao, .produto-categoria, .produto-foto {
+
+    position: relative;
+    margin-right: 5px;
+    color: orangered;
+    font-size: 19.5px;
+    -webkit-text-stroke: 0.75px;
+    -webkit-text-stroke-color: white;
+
+}
+
+.produto-preco {
+
+    right: 20px;
+    top: 20px;
+
+}
+
+.produto-descricao {
+
+    right: 15.75px;
+    top: 40px;
+
+}
+
+.produto-categoria {
+
+    right: 14px;
+    top: 60px;
+
+}
+
+.produto-foto {
+
+    left: 28px;
+    top: 80px;
+
+}
+
+.input-nome, .input-preco, .input-descricao, .input-categoria {
+
+    position: relative;
+    font-size: 19.5;
+    background-color: rgb(255, 216, 145);
+    color: darkorange;
+    text-shadow: 0.75px 0.75px red;
+    width: 175px;
+    height: 22.5px;
+    text-align: center;
+
+}
+
+.input-nome {
+
+    left: 12px;
+
+}
+
+.input-preco {
+
+    top: 20px;
+    right: 6.25px;
+
+}
+
+.input-descricao {
+
+    top: 40px;
+
+}
+
+.input-categoria {
+
+    top: 60px;
+
+}
+
+.input-foto {
+
+    position: relative;
+    left: 38px;
+    top: 80px;
+
+}
+
+input[type = submit] {
+
+    position: absolute;
+    margin-top: 10px;
+    width: 120px;
+    height: 35px;
+    background: linear-gradient(90deg, red, orange);
+    color: white;
+    text-shadow: 0.75px 0.75px black;
+    top: 480px;
+    left: 300px;
+
+}
+
+.imagem-final {
+
+    position: absolute;
+    max-width: 245px;
+    max-height: 245px;
+    bottom: 80px;
+    right: 225px;
+
+}

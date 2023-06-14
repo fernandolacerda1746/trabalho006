@@ -1,0 +1,250 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+body {
+
+    background-color: rgb(255, 216, 145);    
+
+}
+
+/*Containers*/
+
+.header-container {
+
+    display: block;
+    block-size: 108.5px;
+    padding-block: 0.5px;
+    background: linear-gradient(darkred, red, orange);
+    background-repeat: no-repeat;
+    padding-bottom: 0px;
+
+}
+
+.produto-mostruario-container {
+
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    height: 500px;
+    width: fit-content;    
+
+}
+
+/*Barra Superior*/
+
+figure {
+
+    width: fit-content;
+
+}
+
+
+.title-logo, .login, .user-container {
+
+    width: fit-content;
+
+}
+
+.logo, .title, .subtitle {
+
+    display: block;
+    position: relative;
+    width: fit-content;
+
+}
+
+
+.title {
+
+    margin-left: 135px;
+    bottom: 115px;
+    color: rgb(248, 101, 3);
+    font-size: 35px;
+    text-shadow: 1.25px 1.25px yellow;
+
+}
+
+.subtitle {
+
+    bottom: 110px;
+    margin-left: 155px;
+    font-size: 16.5px;
+    color: orangered;
+    text-shadow: 1.75px 1.75px lightgray;
+
+}
+
+.txt-search, .button-search {
+
+    display: block;
+    position: relative;
+
+}
+
+.txt-search {
+
+    left: 430px;
+    bottom: 155px;
+    width: 245px;
+    padding: 7.5px;
+    text-align: center;
+    color: rgba(255, 68, 0, 0.76);
+    background-color: lightgray;
+    text-shadow: 1px 1px black;
+
+}
+
+.button-search {
+
+    font-weight: bold;
+    bottom: 191px;
+    left: 680px;
+    padding: 7.5px;
+    width: 150px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: orangered;
+    box-shadow: 0px 5px lightgray;
+    color: lightgray;
+
+}
+
+.button-search:hover {
+
+    background-color: rgba(146, 39, 0, 0.548);
+
+}
+
+.button-search:active {
+
+    background-color: rgba(146, 39, 0, 0.548);
+    box-shadow: 0 3px darkgray;
+    transform: translateY(2px);
+
+}
+
+.user-container {
+
+    display: block;
+    position: relative;
+    height: 5px; /*Correção de Transbordamento, Não Mexer*/
+    
+
+}
+
+.login {
+
+    position: relative;
+    left: 880px;
+    bottom: 235px;
+
+}
+
+.login-texto {
+
+    position: relative;
+    bottom: 41.5px;
+    right: -40px;
+    font-size: 17.5px;
+    color: lightgray;
+    text-shadow: 1.25px 1.25px darkred,
+                 1.75px 1.75px darkorange;
+
+}
+
+.cadastro-produto {
+
+    position: relative;
+    left: 1040px;
+    bottom: 335px;
+
+}
+
+.cadastro-produto-texto {
+
+    position: relative;
+    color: lightgray;
+    font-size: 17.5px;
+    text-shadow: 1.25px 1.25px darkred,
+                 1.75px 1.75px darkorange;
+    left: 45px;
+    bottom: 80px;
+
+}
+
+.login-texto:hover, .cadastro-produto-texto:hover {
+
+    color:lightslategray;
+    text-shadow: 1.25px 1.25px darkred,
+                 1.75px 1.75px darkorange;
+    cursor: pointer;
+    
+}
+
+/*Tabela de Produtos*/
+
+td{
+
+    padding: 10px;
+    
+
+}
+
+.titulo-mostruario {
+
+    position: absolute;
+    left: 0.25px;
+    top: 5px;
+    width: max-content;
+    height: fit-content;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color:bisque;
+    -webkit-text-stroke-color: orangered;
+    -webkit-text-stroke-width: 0.75px;
+
+
+}
+
+.tabela-produto{
+
+    position: relative;
+    color: bisque;
+    -webkit-text-stroke: 0.75px orange;
+    font-size: 20px;
+    text-align: center;
+    border-collapse: collapse;
+    width: 1349.5px;
+    top: 47.5px;
+}
+
+.linha-cor1{
+
+    background-color: orangered;
+
+}
+
+.linha-cor2{
+
+    background-color: darkred;
+
+}
+
+.linha-cor1:hover, .linha-cor2:hover{
+
+    opacity: 0.85;
+
+}
