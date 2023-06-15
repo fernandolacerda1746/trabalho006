@@ -33,7 +33,6 @@
             <input type = 'password' name = 'senha' placeholder = 'Insira sua senha'>
             <input type = submit value = 'Entrar'>
         </form>
-        <p class = 'novo-usuario'>Deseja ser mais um cliente<br>que bota a mão no fogo?<br><a href = '#'>Clique Aqui</a></p>
     </section>
 </body>
 </html>

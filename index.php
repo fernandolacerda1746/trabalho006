@@ -34,15 +34,15 @@ include("catalogoproduto.php");
 
         <div class = 'user-container'>
             <div class = 'login'>
-                <a href = 'usuario.html'>
+                <a href = 'usuario.php'>
                     <img src = 'Images/icone-registro.png' alt = ''>
-                    <p class = 'login-texto'>Entre ou<br>Cadastre-se</p>
+                    <p class = 'login-texto'>Entrar</p>
                 </a>
             </div>
-            <div class = 'cadastro-produto'>
-                <a href = 'cadastroproduto.html'>
-                    <img src = 'Images/icone-cadastro.png' alt = ''>
-                    <p class = 'cadastro-produto-texto'>Cadastrar Novo<br>Produto</p>
+            <div class = "carrinho-produto">
+                <a href = 'carrinho.php'>
+                    <img src = 'Images/carrinho-icon.png' alt = ''>
+                    <p class = 'carrinho-produto-texto'>Carrinho</p>
                 </a>
             </div>
         </div>
@@ -76,7 +76,7 @@ include("catalogoproduto.php");
                     </td>
                     <td>R$ ".$produtos[$i]['preco']."</td>
                     <td>
-                        <a href = 'compras.php?codigo=".$produtos[$i]['codigo']."'>
+                        <a href = 'adproduto.php?codigo=".$produtos[$i]['codigo']."'>
                             <img src = 'Images/icone2.png'>
                         </a>
                     </td>

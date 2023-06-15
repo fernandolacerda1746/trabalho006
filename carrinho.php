@@ -1,8 +1,8 @@
 <?php 
 
 session_start();
-include("catalogoproduto.php");
-$compras = $_SESSION['compras'];
+include('catalogoproduto.php');
+$compras = @$_SESSION['compras'];
 
 ?>
 
@@ -18,13 +18,15 @@ $compras = $_SESSION['compras'];
 </head>
 <body>
     <section class = 'header-container'>
-        <div class = 'title-logo'>
-            <figure clas = 'logo'>
-                <img src = 'Images/icone3.png' alt =''>
-            </figure>
-            <h4 class = 'title'>Fogo No Estoque</h4>
-            <h5 class = 'subtitle'>Queimando a Concorrencia</h5>
-        </div>
+        <a href = 'index.php'>
+            <div class = 'title-logo'>
+                <figure clas = 'logo'>
+                    <img src = 'Images/icone3.png' alt =''>
+                </figure>
+                <h4 class = 'title'>Fogo No Estoque</h4>
+                <h5 class = 'subtitle'>Queimando a Concorrencia</h5>
+            </div>
+        </a>
 
         <div class = 'search-bar'>
             <form method = 'get'>
@@ -35,15 +37,15 @@ $compras = $_SESSION['compras'];
 
         <div class = 'user-container'>
             <div class = 'login'>
-                <a href = 'usuario.html'>
+                <a href = 'usuario.php'>
                     <img src = 'Images/icone-registro.png' alt = ''>
-                    <p class = 'login-texto'>Entre ou<br>Cadastre-se</p>
+                    <p class = 'login-texto'>Entrar</p>
                 </a>
             </div>
-            <div class = 'cadastro-produto'>
-                <a href = 'cadastroproduto.html'>
-                    <img src = 'Images/icone-cadastro.png' alt = ''>
-                    <p class = 'cadastro-produto-texto'>Cadastrar Novo<br>Produto</p>
+            <div class = 'limpar-carrinho'>
+                <a href = 'limparproduto.php'>
+                    <img src = 'Images/limpar-carrinho.png'>
+                    <p class = 'limpar-carrinho-texto'>Limpar Carrinho</p>
                 </a>
             </div>
         </div>
@@ -53,29 +55,40 @@ $compras = $_SESSION['compras'];
     <section class = 'produto-mostruario-container'>
         <h3 class = 'titulo-mostruario'>Carrinho:</h3>
         <table class = 'tabela-produto'>
-            <tr class = 'tabela-cabecalho'>
+            <tr>
                 <td></td>
+                <td class = "cabecalho">Produto</td>
                 <td></td>
-                <td>Produto</td>
-                <td>Quantidade</td>
-                <td>Preco(R$)</td>
+                <td class = "cabecalho">Quantidade</td>
+                <td></td>
+                <td class = "cabecalho">Preco(R$)</td>
             </tr>
             <?php
-            for($i=0; $i < count($_SESSION['compras']); $i++){
-                if($i % 2 == 0){
-                    echo "<tr class = 'linha-cor1'>";
-                }else{
-                    echo "<tr class = 'linha-cor2'>";
-                }
-                echo"
-                    <td>#".($i+1)."</td>
-                    <td>
+            if(isset($_SESSION['compras'])){
+                for($i=0; $i < count($_SESSION['compras']); $i++){
+                    if($i % 2 == 0){
+                        echo "<tr class = 'linha-cor1'>";
+                    }else{
+                        echo "<tr class = 'linha-cor2'>";
+                    }
+                    echo"<td>
                             <img src = ".$compras[$i]['foto'].">
-                    </td>
-                    <td>".$compras[$i]['nome']."</td>
-                    <td>".$compras[$i]['quantidade']."</td>
-                    <td>R$ ".$compras[$i]['preco']."</td>
-            </tr>";
+                        </td>
+                        <td>".$compras[$i]['nome']."</td>
+                        <td>
+                            <a href = 'removeproduto.php?codigo=".$compras[$i]['codigo']."'>
+                            -
+                            </a>                        
+                        </td>
+                        <td>".$compras[$i]['quantidade']."</td>
+                        <td>
+                            <a href = 'adproduto.php?codigo=".$compras[$i]['codigo']."'>
+                            +
+                            </a>
+                        </td>
+                        <td>R$ ".$compras[$i]['preco']."</td>
+                </tr>";
+                } 
             }
             ?>
         </table>

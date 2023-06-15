@@ -155,36 +155,45 @@ figure {
 .login-texto {
 
     position: relative;
-    bottom: 41.5px;
-    right: -40px;
-    font-size: 17.5px;
+    bottom: 33.5px;
+    right: -43px;
+    font-size: 20px;
     color: lightgray;
     text-shadow: 1.25px 1.25px darkred,
                  1.75px 1.75px darkorange;
 
 }
 
-.cadastro-produto {
+.login-texto:hover {
 
-    position: relative;
-    left: 1040px;
-    bottom: 335px;
-
-}
-
-.cadastro-produto-texto {
-
-    position: relative;
-    color: lightgray;
-    font-size: 17.5px;
+    color:lightslategray;
     text-shadow: 1.25px 1.25px darkred,
                  1.75px 1.75px darkorange;
-    left: 45px;
-    bottom: 80px;
+    cursor: pointer;
+    
+}
+
+.limpar-carrinho {
+
+    position: absolute;
+    bottom: 130px;
+    left: 1002.5px;
 
 }
 
-.login-texto:hover, .cadastro-produto-texto:hover {
+.limpar-carrinho-texto {
+
+    position: relative;
+    bottom: 57.5px;
+    left: 99.5px;
+    font-size: 19px;
+    color: lightgray;
+    text-shadow: 1.25px 1.25px darkred,
+    1.75px 1.75px darkorange;
+
+}
+
+.limpar-carrinho-texto:hover {
 
     color:lightslategray;
     text-shadow: 1.25px 1.25px darkred,
@@ -212,7 +221,7 @@ td{
     margin-left: 10px;
     margin-bottom: 20px;
     font-size: 35px;
-    color:bisque;
+    color: bisque;
     -webkit-text-stroke-color: orangered;
     -webkit-text-stroke-width: 0.75px;
 
@@ -227,8 +236,15 @@ td{
     font-size: 25px;
     text-align: center;
     border-collapse: collapse;
-    width: 1349.5px;
+    width: 1350px;
     top: 47.5px;
+}
+
+.cabecalho{
+
+    color: red;
+    -webkit-text-stroke: 0.75px orange;
+
 }
 
 .linha-cor1{

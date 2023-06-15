@@ -155,36 +155,36 @@ figure {
 .login-texto {
 
     position: relative;
-    bottom: 41.5px;
-    right: -40px;
-    font-size: 17.5px;
+    bottom: 30px;
+    right: -42.5px;
+    font-size: 19.5px;
     color: lightgray;
     text-shadow: 1.25px 1.25px darkred,
                  1.75px 1.75px darkorange;
 
 }
 
-.cadastro-produto {
+.carrinho-produto {
 
-    position: relative;
-    left: 1040px;
-    bottom: 335px;
+    position: absolute;
+    left: 1000px;
+    bottom: 156.5px;
 
 }
 
-.cadastro-produto-texto {
+.carrinho-produto-texto {
 
     position: relative;
     color: lightgray;
-    font-size: 17.5px;
+    font-size: 19.5px;
     text-shadow: 1.25px 1.25px darkred,
                  1.75px 1.75px darkorange;
-    left: 45px;
-    bottom: 80px;
+    left: 90px;
+    bottom: 45px;
 
 }
 
-.login-texto:hover, .cadastro-produto-texto:hover {
+.login-texto:hover, .carrinho-produto-texto:hover {
 
     color:lightslategray;
     text-shadow: 1.25px 1.25px darkred,
@@ -227,7 +227,7 @@ td{
     font-size: 20px;
     text-align: center;
     border-collapse: collapse;
-    width: 1349.5px;
+    width: 1350px;
     top: 47.5px;
 }
 

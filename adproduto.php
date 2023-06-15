@@ -21,7 +21,7 @@ var_dump($produto);
 //Carrinho
 $compras = @$_SESSION['compras'];
 
-//Adicionarproduto
+//Adicionar Produto
 if($compras == null){
     $novoproduto = array(
         'codigo' => $produto['codigo'],
@@ -58,6 +58,6 @@ echo "<pre>";
 var_dump($_SESSION['compras']);
 
 echo "<br><br>";
-echo "<a href=\"index.php\">Voltar<a/>";
+echo "<a href=\"carrinho.php\">Carrinho<a/>";
 
 ?>
