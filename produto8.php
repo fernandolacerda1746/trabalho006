@@ -11,7 +11,7 @@ include("catalogoproduto.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/produto1.css">
+    <link rel="stylesheet" href="Styles/produto8.css">
     <link rel="icon" href="Images/icone1.png">
     <title>Fogo No Estoque</title>
 </head>
@@ -52,20 +52,20 @@ include("catalogoproduto.php");
     <hr>
 
     <section class = 'produto-mostruario-container'>
-        <h3 class = 'titulo-produto'><?php echo $produtos[0]['nome'] ?></h3>
+        <h3 class = 'titulo-produto'><?php echo $produtos[7]['nome'] ?></h3>
         <figure class = 'foto-produto'>
-            <img src = '<?php echo $produtos[0]['foto']?>'>
+            <img src = '<?php echo $produtos[7]['foto']?>'>
         </figure>
-        <h4 class = 'categoria-produto'><b>Categoria:</b> <?php echo $produtos[0]['categoria']?></h4>
-        <h4 class = 'preco-produto'><b>Preço:</b> R$ <?php echo $produtos[0]['preco']?></h4>
+        <h4 class = 'categoria-produto'><b>Categoria:</b> <?php echo $produtos[7]['categoria']?></h4>
+        <h4 class = 'preco-produto'><b>Preço:</b> R$ <?php echo $produtos[7]['preco']?></h4>
         <div class = 'descricao-produto'>
             <h4 class = 'descricao-titulo'>Descrição:</h4>
             <p class = 'descricao-texto'>
-                <?php echo $produtos[0]['descricao']; ?>
+                <?php echo $produtos[7]['descricao']; ?>
             </p>
         </div>
         <div class = 'link-compra'>
-            <a href = 'adcproduto.php?codigo=1'>
+            <a href = 'adcproduto.php?codigo=8'>
                 <p class = 'link-compra-texto'>
                     Se interessou no produto e quer comprar?
                 </p>

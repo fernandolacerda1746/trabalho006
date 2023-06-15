@@ -205,7 +205,7 @@ td{
 .titulo-produto {
 
     position: absolute;
-    left: 400px;
+    left: 420px;
     top: 10px;
     width: max-content;
     height: fit-content;
@@ -221,14 +221,14 @@ td{
 
     position: absolute;
     top: 65px;
-    left: 534px;
+    left: 570px;
 
 }
 
 .categoria-produto{
 
     position: absolute;
-    top: 210px;
+    top: 175px;
     left: 510px;
     font-size: 25px;
     color:bisque;
@@ -241,8 +241,8 @@ td{
 .preco-produto{
 
     position: absolute;
-    top: 250px;
-    left: 520px;
+    top: 210px;
+    left: 540px;
     font-size: 25px;
     color:bisque;
     -webkit-text-stroke-color: orangered;
@@ -255,8 +255,8 @@ td{
 
     position: absolute;
     text-align: center;
-    top: 300px;
-    left: 440px;
+    top: 250px;
+    left: 450px;
     font-size: 25px;
     color:bisque;
     -webkit-text-stroke-color: orangered;
@@ -268,8 +268,8 @@ td{
 .link-compra{
 
     position: absolute;
-    top: 475px;
-    left: 520px;
+    top: 410px;
+    left: 530px;
     font-size: 20px;
     color:bisque;
     -webkit-text-stroke-color: orangered;

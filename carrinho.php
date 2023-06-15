@@ -18,15 +18,15 @@ $compras = @$_SESSION['compras'];
 </head>
 <body>
     <section class = 'header-container'>
-        <a href = 'index.php'>
-            <div class = 'title-logo'>
-                <figure clas = 'logo'>
+        <div class = 'title-logo'>
+            <figure clas = 'logo'>
+                <a href = 'index.php'>
                     <img src = 'Images/icone3.png' alt =''>
-                </figure>
-                <h4 class = 'title'>Fogo No Estoque</h4>
-                <h5 class = 'subtitle'>Queimando a Concorrencia</h5>
-            </div>
-        </a>
+                </a>    
+            </figure>
+            <h4 class = 'title'>Fogo No Estoque</h4>
+            <h5 class = 'subtitle'>Queimando a Concorrencia</h5>
+        </div>
 
         <div class = 'search-bar'>
             <form method = 'get'>
@@ -53,7 +53,7 @@ $compras = @$_SESSION['compras'];
     <hr>
 
     <section class = 'produto-mostruario-container'>
-        <h3 class = 'titulo-mostruario'>Carrinho:</h3>
+        <h3 class = 'titulo-mostruario'>Carrinho</h3>
         <div class = 'valor-total'>
             <?php
                 $total = 0;
@@ -90,13 +90,13 @@ $compras = @$_SESSION['compras'];
                         <td>".$compras[$i]['nome']."</td>
                         <td>
                             <a href = 'removeproduto.php?codigo=".$compras[$i]['codigo']."'>
-                            -
+                                <img src = 'Images/down-arrow.png'>
                             </a>                        
                         </td>
                         <td>".$compras[$i]['quantidade']."</td>
                         <td>
                             <a href = 'adcproduto.php?codigo=".$compras[$i]['codigo']."'>
-                            +
+                                <img src = 'Images/up-arrow.png'>
                             </a>
                         </td>
                         <td>R$ ".$compras[$i]['preco']."</td>

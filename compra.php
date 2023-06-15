@@ -53,7 +53,7 @@ class CarrinhoDeCompras {
 
         header("location: carrinho.php");
     }
-
+    //Remover um item do carrinho
     public function removerProduto($codigo) {
         for($i = 0; $i < count($this->compras); $i++){
             if($this->compras[$i]['codigo'] == $codigo){
@@ -69,6 +69,7 @@ class CarrinhoDeCompras {
         header("location: carrinho.php");
     }
 
+    //Limpar o carrinho
     public function limparCarrinho() {
         $_SESSION['compras'] = null;
 

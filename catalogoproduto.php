@@ -32,7 +32,7 @@ $produtos = array(
         'codigo'=>4,
         'nome'=> 'Casa Mal Assombrada',
         'categoria'=>'Imóveis',
-        'descricao'=>' Parece assustadora,<br>mas os fantasmas<br>são um pouco incompetentes',
+        'descricao'=>' Parece assustadora,<br>mas os fantasmas<br>nem assustam tanto assim',
         'preco'=> 50000.00,
         'foto'=>'Images/Produtos/casa1.JPG',
         'link'=>'produto4.php'
@@ -59,10 +59,37 @@ $produtos = array(
         'codigo'=>7,
         'nome'=> 'Intel 4004 Personal Computer',
         'categoria'=>'Eletrônicos',
-        'descricao'=>'Se um computador desses,<br>levou o homem a lua<br>não precisa de mais<br>para usar um Instagram',
+        'descricao'=>'Se um computador desses,<br>levou o homem a lua<br>imagine para<br>para usar um Instagram',
         'preco'=> 4550.00,
         'foto'=>'Images/Produtos/computador1.JPG',
         'link'=>'produto7.php'
+    ),
+    7=>array(
+        'codigo'=>8,
+        'nome'=> 'Absinto',
+        'categoria'=>'Bebidas',
+        'descricao'=>'Aquela bebida para,<br>dormir em qualquer lugar<br>e acordar no leito do hospital',
+        'preco'=> 249.99,
+        'foto'=>'Images/Produtos/bebida1.JPG',
+        'link'=>'produto8.php'
+    ),
+    8=>array(
+        'codigo'=>9,
+        'nome'=> 'Figure Action Guerra Civil',
+        'categoria'=>'Brinquedos',
+        'descricao'=>'Edição especial<br>do filme, Guerra Civil<br>da Marvel',
+        'preco'=> 40.50,
+        'foto'=>'Images/Produtos/brinquedo2.JPG',
+        'link'=>'produto9.php'
+    ),
+    9=>array(
+        'codigo'=>10,
+        'nome'=> 'PC Gamer Open Air 1290-VxII',
+        'categoria'=>'Eletrônicos',
+        'descricao'=>'Computador gamer,<br>para fritar o processador<br>e assar o quarto',
+        'preco'=> 9520.50,
+        'foto'=>'Images/Produtos/computador2.JPG',
+        'link'=>'produto10.php'
     )
 );
 
