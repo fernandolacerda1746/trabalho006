@@ -215,7 +215,7 @@ td{
 
     position: absolute;
     left: 0.25px;
-    top: 5px;
+    top: 10px;
     width: max-content;
     height: fit-content;
     margin-left: 10px;
@@ -228,6 +228,20 @@ td{
 
 }
 
+.valor-total{
+
+    position: relative;
+    left: 820px;
+    top:  9.5px;
+    font-size: 32.5px;
+    color: bisque;
+    -webkit-text-stroke-color: orangered;
+    -webkit-text-stroke-width: 0.75px;
+    font-weight: bold;
+    width: max-content;
+
+}
+
 .tabela-produto{
 
     position: relative;
@@ -237,7 +251,7 @@ td{
     text-align: center;
     border-collapse: collapse;
     width: 1350px;
-    top: 47.5px;
+    top: 30px;
 }
 
 .cabecalho{

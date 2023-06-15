@@ -54,6 +54,18 @@ $compras = @$_SESSION['compras'];
 
     <section class = 'produto-mostruario-container'>
         <h3 class = 'titulo-mostruario'>Carrinho:</h3>
+        <div class = 'valor-total'>
+            <?php
+                $total = 0;
+                if(isset($_SESSION['compras'])){
+                    for($i=0; $i < count($_SESSION['compras']); $i++){
+                        $subtotal = $compras[$i]['preco'] * $compras[$i]['quantidade'];
+                        $total += $subtotal;
+                    } 
+                }
+                echo "Valor Total: R$ " . $total;
+            ?>
+        </div>
         <table class = 'tabela-produto'>
             <tr>
                 <td></td>
@@ -62,6 +74,7 @@ $compras = @$_SESSION['compras'];
                 <td class = "cabecalho">Quantidade</td>
                 <td></td>
                 <td class = "cabecalho">Preco(R$)</td>
+                <td class = "cabecalho">Subtotal(R$)</td>
             </tr>
             <?php
             if(isset($_SESSION['compras'])){
@@ -87,6 +100,7 @@ $compras = @$_SESSION['compras'];
                             </a>
                         </td>
                         <td>R$ ".$compras[$i]['preco']."</td>
+                        <td>R$ ".$compras[$i]['preco'] * $compras[$i]['quantidade']."</td>
                 </tr>";
                 } 
             }

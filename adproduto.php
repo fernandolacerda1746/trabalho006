@@ -5,18 +5,12 @@ include('catalogoproduto.php');
 
 $codigo = $_GET['codigo'];
 
-echo $codigo;
-
 //Obter o produto a partir do código
 for($i = 0; $i < count($produtos); $i++){
     if($produtos[$i]['codigo'] == $codigo){
         $produto = $produtos[$i];
     }
 }
-
-echo "<br>";
-echo "<pre>";
-var_dump($produto);
 
 //Carrinho
 $compras = @$_SESSION['compras'];
@@ -53,11 +47,5 @@ if($compras == null){
 
 $_SESSION['compras'] = $compras;
 
-echo "<br><br>";
-echo "<pre>";
-var_dump($_SESSION['compras']);
-
-echo "<br><br>";
-echo "<a href=\"carrinho.php\">Carrinho<a/>";
-
+header("location: carrinho.php");
 ?>
