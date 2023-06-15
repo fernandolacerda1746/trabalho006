@@ -43,7 +43,7 @@ $compras = @$_SESSION['compras'];
                 </a>
             </div>
             <div class = 'limpar-carrinho'>
-                <a href = 'limparproduto.php'>
+                <a href = 'limparcarrinho.php'>
                     <img src = 'Images/limpar-carrinho.png'>
                     <p class = 'limpar-carrinho-texto'>Limpar Carrinho</p>
                 </a>
@@ -95,7 +95,7 @@ $compras = @$_SESSION['compras'];
                         </td>
                         <td>".$compras[$i]['quantidade']."</td>
                         <td>
-                            <a href = 'adproduto.php?codigo=".$compras[$i]['codigo']."'>
+                            <a href = 'adcproduto.php?codigo=".$compras[$i]['codigo']."'>
                             +
                             </a>
                         </td>

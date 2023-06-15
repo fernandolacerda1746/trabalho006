@@ -76,7 +76,7 @@ include("catalogoproduto.php");
                     </td>
                     <td>R$ ".$produtos[$i]['preco']."</td>
                     <td>
-                        <a href = 'adproduto.php?codigo=".$produtos[$i]['codigo']."'>
+                        <a href = 'adcproduto.php?codigo=".$produtos[$i]['codigo']."'>
                             <img src = 'Images/icone2.png'>
                         </a>
                     </td>

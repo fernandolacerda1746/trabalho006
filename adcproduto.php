@@ -6,6 +6,5 @@ include('compra.php');
 $codigo = $_GET['codigo'];
 
 $carrinho = new CarrinhoDeCompras();
-$carrinho->removerProduto($codigo);
-
+$carrinho->adicionarProduto($codigo);
 ?>
